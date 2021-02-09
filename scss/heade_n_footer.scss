@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+
+$main-color: #002626;
+$second-color:#E55812;
+$third-color:#EFE7DA;
+$font-size: 1.6rem;
+$title-family:'Libre Baskerville', serif;
+
+
+:root{
+
+    --font-family-p: 'Montserrat', sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2{
+    font-family:$title-family;
+}
+
+h2{
+    @extend h1,h2;
+    font-size: $font-size*3;
+    color: $second-color;
+}
+
+h4{
+    font-size: $font-size;
+    color: $third-color;
+}
+
+header {
+    background:linear-gradient(to top, #002626,#0E4749);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+    
+}
+
+
+.dropdown{
+    display: none;
+}
+.menu_ul-li{
+    list-style: none;
+}
+
+.menu_ul-li a{
+    text-decoration: none;
+    font-size: $font-size;
+    color: $second-color;
+    margin-left: 3rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+main{
+    height: 1000px;
+    background-color: $third-color;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.footer__section{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to top,#002626,#0E4749 );
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+.footer__section--div {
+    color: $second-color;
+    font-family: var(--font-family-p);
+    font-size: $font-size;
+}
+
+.footer__section--div ul li a{
+    @extend .footer__section--div;
+}
+
