@@ -41,6 +41,7 @@ p{
 
 .section-1__div--description button a{
     color: $second-color;
+    font-size: $font-size;
 }
 
 .section-1__div--description button:hover{
@@ -65,7 +66,7 @@ p{
     background-image: url('../assets/section-2.jpg');
     background-size: cover;
     background-position: center;
-    
+    padding: 0;
 }
 
 /*Section 3*/
@@ -88,15 +89,17 @@ p{
 
 .section-3{
     height: fit-content;
+    background-color: $second-color;
     .section-3__div--title{
         width: 100%;
         height: 10rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10rem;
+        padding-top: 10rem;
     }
     .section-3__div--grid{
+        padding-top: 10rem;
         display: grid;
         grid-template-areas: 
         "div1"
@@ -146,6 +149,79 @@ p{
             }
         }
         
+        .dance-button{
+            padding: 2rem 5rem;
+            background-color: $main-color;
+            border: none;
+            border-radius: 50px;
+            color: $second-color;
+            margin: 2rem 0;
+        }
+        .dance-button a{
+            color: $second-color;
+            font-size: $font-size;
+            
+        }
+        .dance-button:hover{
+            transform: scale(1.1,1.1);
+            transition: 0.01s;
+        }
+        
     }
 }
 
+.section-4{
+    display: flex;
+    align-items: center;
+    .section-4__div{
+        width: 50%;
+        padding: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }  
+    .section-4__div h2{
+        color: $main-color;
+    }
+    .section-4__div input{
+        width: 30rem;
+        height: 6.4rem;
+        border-radius: 50px;
+        border: 0.5px, $main-color;
+        outline: 1px, $main-color;
+        margin-right: 2rem;
+        font-size: medium;
+        color: $main-color;
+        padding-left: 2rem;
+    }
+    .section-4__div input:hover{
+        box-shadow: 0.5px 1px 5px black;
+    }
+    .section-4__div input:focus{
+        outline: none;
+    }
+
+    .section-4__div input::placeholder{
+        font-size: medium;
+        padding-left: 3rem;
+    }
+
+    .section-4__div button{
+        padding: 2rem 5rem;
+        background-color: $main-color;
+        border: none;
+        border-radius: 50px;
+        color: $second-color;
+        margin: 0;
+    }
+    .section-4__div button a{
+        color: $second-color;
+        font-size: $font-size;
+    }
+
+    .section-4__div button:hover{
+        transform: scale(1.1,1.1);
+        transition: 0.01s;
+    }
+
+}
