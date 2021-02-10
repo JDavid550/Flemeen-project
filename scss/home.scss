@@ -1,0 +1,151 @@
+@import "variables";
+
+p{
+    font-size: $font-size;
+    font-family: var(--font-family-p);
+}
+
+.section-1{
+    height: 100vh;
+}
+
+.section-1__div--image{
+    background-image: url(../assets/section-1.jpg);
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.section-1__div--description{
+    padding: 5rem;
+}
+
+.section-1__div--title{
+    font-size:$font-size*3;
+    padding-right: 25rem;
+    padding-top: 10rem;
+    color: $main-color;
+}
+
+
+
+.section-1__div--description button{
+    padding: 2rem 3rem;
+    background-color: $main-color;
+    border: none;
+    border-radius: 50px;
+    color: $second-color;
+    margin-top: 7rem;
+}
+
+.section-1__div--description button a{
+    color: $second-color;
+}
+
+.section-1__div--description button:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.01s;
+}
+
+/*Section 2*/
+
+.section-2__div--description{
+    @extend .section-1__div--description;
+    padding-right: 20rem;
+    .section-2__div--title{
+        @extend .section-1__div--title;
+        margin-bottom: 5rem;
+    }
+}
+
+
+.section-2__div--image{
+    @extend .section-1__div--image;
+    background-image: url('../assets/section-2.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/*Section 3*/
+
+@mixin display($display, $justification,$direction){
+    display: $display;
+    align-items: $justification;
+    flex-direction: $direction;
+    
+}
+@mixin sizes($width,$height) {
+    width: $width;
+    height: $height;
+    
+}
+
+.img img{
+    @include sizes(30rem,30rem)
+}
+
+.section-3{
+    height: fit-content;
+    .section-3__div--title{
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10rem;
+    }
+    .section-3__div--grid{
+        display: grid;
+        grid-template-areas: 
+        "div1"
+        "div2";
+        margin: 0 10rem;
+        .grid--div-1{
+            grid-area: div1;
+            margin-bottom: 5rem;
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-evenly;       
+           
+            .grid--div-salsa{
+       
+                @include display(flex,center,column);
+                margin: 1rem;
+                border-radius: 30px;
+                margin: 0 1rem;
+                box-shadow: 0.5px 1px 5px black;
+                overflow: hidden
+                
+            }
+            .grid--div-tango{
+        
+                @include display(flex,center,column);
+                @extend .grid--div-salsa;
+                
+            }
+            
+           
+        }
+        .grid--div-2{
+            @extend .grid--div-1;
+            grid-area: div2;
+           
+            .grid--div-urbano{
+            
+                @include display(flex,center,column);
+                @extend .grid--div-salsa;
+               
+            }
+            .grid--div-ballet{
+           
+                @include display(flex,center,column);
+                @extend .grid--div-salsa;
+              
+            }
+        }
+        
+    }
+}
+

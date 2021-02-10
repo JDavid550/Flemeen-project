@@ -1,25 +1,18 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing:content-box;
+    box-sizing:border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
-
-$main-color: #002626;
-$second-color:#E55812;
-$third-color:#EFE7DA;
-$font-size: 1.6rem;
-$title-family:'Libre Baskerville', serif;
+@import "variables";
 
 
-:root{
 
-    --font-family-p: 'Montserrat', sans-serif;
-}
+
 
 
 html{
@@ -36,6 +29,8 @@ a{
 
 h1,h2{
     font-family:$title-family;
+    font-size: $font-size*3;
+    color: $main-color;
 }
 
 h2{
@@ -50,7 +45,7 @@ h4{
 }
 
 header {
-    background:linear-gradient(to top, #002626,#0E4749);
+    background:$main-color;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,8 +80,22 @@ header {
 
 }
 
+.menu_ul-li a::after{
+    content: '';
+    background: $second-color;
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: width .3s;
+}
+
+.menu_ul-li a:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
 main{
-    height: 1000px;
+    height: fit-content;
     background-color: $third-color;
 }
 
@@ -99,7 +108,7 @@ footer{
 .footer__section{
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to top,#002626,#0E4749 );
+    background: $main-color;
     justify-content: space-between;
     padding: 5rem;
 }
