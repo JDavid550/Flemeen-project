@@ -1,1 +1,25 @@
 @import "heade_n_footer";
+@import "variables";
+
+.about-section-1{
+    height: 100vh;
+}
+
+.about-section-2{
+    height: 100vh;
+}
+
+.about-section-1-aside{
+    box-shadow: 1px 1px 5px $main-color;
+    display: flex;
+    flex-direction: column;
+    background-color: $second-color;
+}
+
+.article-div{
+    display: none;
+}
+
+.active{
+    display: block;
+}

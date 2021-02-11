@@ -7,6 +7,7 @@ p{
 
 .section-1{
     height: 100vh;
+    width: 100vw;
 }
 
 .section-1__div--image{
@@ -23,7 +24,7 @@ p{
 
 .section-1__div--title{
     font-size:$font-size*3;
-    padding-right: 25rem;
+    padding-right: 10rem;
     padding-top: 10rem;
     color: $main-color;
 }
@@ -51,6 +52,11 @@ p{
 
 /*Section 2*/
 
+.section-2{
+    width: 100vw;
+    height: 100vh;
+}
+
 .section-2__div--description{
     @extend .section-1__div--description;
     padding-right: 20rem;
@@ -67,6 +73,7 @@ p{
     background-size: cover;
     background-position: center;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /*Section 3*/
@@ -88,6 +95,7 @@ p{
 }
 
 .section-3{
+    width: 100vw;
     height: fit-content;
     background-color: $second-color;
     .section-3__div--title{
@@ -186,6 +194,7 @@ p{
     .section-4__div input{
         width: 30rem;
         height: 6.4rem;
+        border: 2px,$main-color;
         border-radius: 50px;
         border: 0.5px, $main-color;
         outline: 1px, $main-color;

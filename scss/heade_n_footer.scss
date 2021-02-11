@@ -94,10 +94,12 @@ header {
     transition: width .3s;
 }
 
-main{
+body,main{
     height: fit-content;
     background-color: $third-color;
 }
+
+
 
 footer{
     display: flex;
