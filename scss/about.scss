@@ -2,7 +2,10 @@
 @import "variables";
 
 .about-section-1{
-    height: 100vh;
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about-section-2{
@@ -18,8 +21,138 @@
 
 .article-div{
     display: none;
+    padding: 7rem;
 }
+
+.article-div-1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.article-div-1 img{
+    width: 40rem;
+    height: 40rem;
+}
+.article-div-1 p{
+    padding: 5rem;
+}
+
+.article-div-2{
+    @extend .article-div-1;
+}
+
+.article-div-2 img{
+    width: 40rem;
+    height: 40rem;
+}
+
+.article-div-2 p{
+    padding: 5rem;
+}
+
+.article-div-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    
+}
+
+.article-div-3-1{
+    width: 25rem;
+    height: 40rem;
+    background-color: $second-color;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-div-3-1 h2{
+    color: $main-color;
+}
+
 
 .active{
     display: block;
+}
+
+.about-section-1-aside{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-section-1-aside a{
+    font-size: $font-size*3;
+    color: $main-color;
+}
+
+.about-section-1-aside a::after{
+    content: '';
+    background: $main-color;
+    display: block;
+    height: 4px;
+    width: 0;
+    transition: width .3s;
+}
+
+
+.about-section-1-aside a:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.about-section-2{
+    height: 10rem;
+    text-align: center;
+    background-color: $main-color;
+    width: 100vw;
+    
+}
+
+.about-section-2 h1{
+    color: $second-color;
+    padding: 2rem;
+}
+
+.about-section-3{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .about-section-3-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 1rem;
+    }
+    .card{
+        margin: 2rem;
+        border-radius: 30px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    .card-body{
+        text-align: center;
+    }
+    .card-text{
+        font-size: $font-size*1.5;
+    }
+    .linkedin{
+        cursor: pointer;
+        transform: scale(0.5,0.5);
+    }
 }
