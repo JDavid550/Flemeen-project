@@ -1,1 +1,125 @@
 @import "heade_n_footer";
+@import "variables";
+
+
+.services-section-1{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    padding: 0 5rem;
+    .services-section-1__div-1{
+        padding: 0;
+    }
+    .services-section-1__div-2{
+        padding: 5rem;
+    }
+    .services-section-1__div-1 img{
+        width: 50vw;
+    }
+    
+}
+
+.services-section-2{
+    width: 100vw;
+    @extend .services-section-1;
+    .services-section-2__div-1{
+        padding: 5rem;
+    }
+    .services-section-2__div-2{
+       padding: 0;
+    }
+    .services-section-2__div-2 img{
+        width: 50vw;
+    }
+}
+
+.services-section-3{
+    @extend .services-section-1;
+    width: 100vw;
+    .services-section-3__div-1{
+        padding:0;
+    }
+    .services-section-3__div-2{
+        padding: 5rem;
+    }
+}
+
+.services-section-4{
+    @extend .services-section-1;
+    width: 100vw;
+    .services-section-4__div-1{
+        padding:5rem;
+    }
+    .services-section-4__div-2{
+        padding:0;
+    }
+}
+
+.button{
+    padding: 2rem 5rem;
+    background-color: $main-color;
+    border: none;
+    border-radius: 50px;
+    color: $second-color;
+    margin-top: 3rem;
+}
+
+.button a{
+    color: $second-color;
+    font-size: $font-size;
+}
+
+.button:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.01s;
+}
+
+.description{
+    margin-top: 3rem;
+}
+
+.services-section-5{
+    width: 100vw;
+    margin: 8rem 0;
+    @extend .services-section-1;
+}
+
+th{
+    padding: 2rem 5rem;
+    font-size: $font-size;
+    font-family: var(--font-family-p);
+    background-color: $main-color;
+    color: $second-color;
+}
+
+td{
+    padding: 2rem 5rem;
+    font-size: $font-size;
+    font-family: var(--font-family-p);
+}
+
+.services-section-5__div-1{
+    display: flex;
+    justify-content: center;
+}
+
+.accordion{
+    margin-top: 5rem;
+}
+
+.accordion-button{
+    font-size: $font-size;
+    background-color: $second-color;
+    color: $main-color;
+}
+
+.accordion-button:focus{
+    color: $second-color;
+    box-shadow: none;
+    background-color: $main-color;
+    outline: none;
+}
+
+.accordion-item{
+    font-size: $font-size;
+}
