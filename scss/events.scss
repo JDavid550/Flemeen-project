@@ -1,5 +1,22 @@
 @import "heade_n_footer";
+@import "variables";
 
 .d-block{
     max-height: 80vh;
+}
+
+.carousel-control-prev{
+    background: transparent;
+    border: none;
+}
+
+.carousel-control-next{
+    background: transparent;
+    border: none;
+}
+
+.events-section-2{
+    background-color: $second-color;
+    margin-top: 10rem;
+    padding: 5rem;
 }

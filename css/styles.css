@@ -605,8 +605,24 @@ footer {
 .footer__div {
   text-align: center; }
 
+:root {
+  --font-family-p: 'Montserrat', sans-serif; }
+
 .d-block {
   max-height: 80vh; }
+
+.carousel-control-prev {
+  background: transparent;
+  border: none; }
+
+.carousel-control-next {
+  background: transparent;
+  border: none; }
+
+.events-section-2 {
+  background-color: #E8E9F3;
+  margin-top: 10rem;
+  padding: 5rem; }
 
 * {
   margin: 0;
