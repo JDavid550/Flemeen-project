@@ -1,1 +1,73 @@
 @import "heade_n_footer";
+@import "variables";
+
+.info-section-1{
+    width: 100vw;
+    padding: 5rem;
+    .info-section-1__div-2{
+        
+        padding-left: 10rem;
+        label{
+            font-family: var(--font-family-p);
+            font-size: $font-size;
+        }
+        input,select{
+            height: 3rem;
+            border: 1px, $main-color;
+            font-family: var(--font-family-p);
+            font-size: $font-size;
+            padding-left: 3rem;
+        }
+
+        input:focus,select:focus{
+            outline: none;
+        }
+
+        input[type="text"],[type="email"],[type="number"]{
+            border-radius: 30px;
+            
+        }
+        textarea{
+            resize: none;
+            font-size: $font-size;
+            font-family: var(--font-family-p);
+        }
+        textarea:focus{
+            outline: none;
+        }
+        input[type="submit"]{
+            background-color: $main-color;
+            height: 5rem;
+            padding: 0 7rem;
+            color: $second-color;
+            border-radius: 50px;
+            width: fit-content;
+            margin-top: 2rem;
+            border: none;
+            justify-self: center;
+            font-size: $font-size;
+            font-family: var(--font-family-p);
+        }
+    }
+    
+    .info-section-1__div-2 form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right:10rem;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .info{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+.info-section-2{
+    padding: 5rem;
+    text-align: center;
+    background-color: $second-color;
+}
+
