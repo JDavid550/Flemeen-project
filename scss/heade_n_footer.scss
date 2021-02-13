@@ -132,6 +132,14 @@ footer{
 }
 
 @media (max-width: 576px){
+  
+    .footer__section{
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width:768px){
     .menu{
         display:none;
     }
@@ -143,8 +151,5 @@ footer{
         color: $main-color;
         border-radius: 20px;
     }
-    .footer__section{
-        flex-direction: column;
-
-    }
+    
 }

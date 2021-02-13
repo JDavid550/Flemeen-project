@@ -292,3 +292,51 @@ p{
 
     
 }
+@media (min-width:576px) and (max-width :768px){
+    .section-1{
+        height: fit-content;
+        margin: 0;
+        .section-1__div--title{
+            font-size: $font-size;
+            padding-right: 5rem;
+            padding-top: 5rem;
+        }
+    }
+    .section-2{
+        margin: 0;
+        height: fit-content;
+        .section-2__div--description{
+            padding: 0 3rem 3rem 3rem;
+            .section-2__div--title{
+                padding-top: 3rem;
+                font-size: $font-size*1.5;
+                
+            }  
+        }
+        .section-2__div--image{
+            background-size: cover;
+         }
+        .section-2__div--description p{
+            font-size: $font-size*0.8;
+        }
+        .section-2__div--description button{
+            margin-top: 2rem;
+        }
+        
+    }
+    .section-3__div--grid{
+        margin: 0;
+        .grid--div-1{
+            display: flex;
+            flex-wrap: wrap;
+            .grid--div-salsa{
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+
+            }
+        }
+    }
+    .section-4__div h2{
+        font-size: $font-size*2;
+    }
+}
