@@ -1,0 +1,48 @@
+@import "variables";
+
+
+.form{
+    height: 100vh;
+    .form-title{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .form-div{
+        box-shadow: 1px 1px 5px $main-color;
+        border-radius: 5px;
+        margin: 0 30rem;
+        margin-top: 5rem;
+        background-color: $second-color;
+        padding: 5rem;
+        label{
+            font-size: $font-size;
+            font-family: var(--font-family-p);
+        }
+        input{
+            border-radius: 50px;
+            height: 5rem;
+            @extend label;
+        }
+        select{
+            @extend input;
+        }
+       
+        .btn{
+            height: 5rem;
+            padding: 0 7rem;
+            background-color: $main-color;
+            color: $second-color;
+            border-radius: 30px;
+        }
+        .boton{
+            display: flex;
+            justify-content: center;
+            
+        }
+        button{
+            font-size: $font-size;
+            font-family: var(--font-family-p);
+        }
+    }
+}
+
