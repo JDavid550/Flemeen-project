@@ -46,3 +46,16 @@
     }
 }
 
+@media (max-width:576px){
+    .form{
+        height: fit-content;
+        .form-title{
+            margin-bottom: 2rem;
+        }
+        .form-div{
+            margin: 0;
+           
+        }
+    }
+   
+}

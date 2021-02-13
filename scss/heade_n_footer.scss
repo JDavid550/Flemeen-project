@@ -67,6 +67,9 @@ header {
 .dropdown{
     display: none;
 }
+
+
+
 .menu_ul-li{
     list-style: none;
 }
@@ -126,4 +129,22 @@ footer{
 }
 .footer__div{
     text-align: center;
+}
+
+@media (max-width: 576px){
+    .menu{
+        display:none;
+    }
+    .dropdown{
+        display: block;
+    }
+    #dropdownMenuButton{
+        background-color: $second-color;
+        color: $main-color;
+        border-radius: 20px;
+    }
+    .footer__section{
+        flex-direction: column;
+
+    }
 }

@@ -9,13 +9,12 @@
     padding: 0 5rem;
     .services-section-1__div-1{
         padding: 0;
+        overflow: hidden;
     }
     .services-section-1__div-2{
         padding: 5rem;
     }
-    .services-section-1__div-1 img{
-        width: 50vw;
-    }
+    
     
 }
 
@@ -27,10 +26,10 @@
     }
     .services-section-2__div-2{
        padding: 0;
+       overflow: hidden;
+       height: fit-content;
     }
-    .services-section-2__div-2 img{
-        width: 50vw;
-    }
+    
 }
 
 .services-section-3{
@@ -38,6 +37,7 @@
     width: 100vw;
     .services-section-3__div-1{
         padding:0;
+        overflow: hidden;
     }
     .services-section-3__div-2{
         padding: 5rem;
@@ -52,6 +52,7 @@
     }
     .services-section-4__div-2{
         padding:0;
+        overflow: hidden;
     }
 }
 
@@ -122,4 +123,24 @@ td{
 
 .accordion-item{
     font-size: $font-size;
+}
+
+@media (max-width:576px){
+    .services-section-1{
+        padding: 0;
+    }
+    .services-section-2{
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .services-section-3{
+        padding: 0;
+    }
+    .services-section-4{
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
 }

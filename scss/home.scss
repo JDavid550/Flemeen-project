@@ -234,3 +234,61 @@ p{
     }
 
 }
+
+@media (max-width:576px){
+    .section-1{
+        height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin: 0;
+        .section-1__div--title{
+            font-size: $font-size*2;
+            padding-right: 5rem;
+            padding-top: 5rem;
+        }
+        .section-1__div--image{
+            height: 450px;
+            width: 100vw;
+            padding: 0;
+            background-attachment: scroll;
+            
+        }
+    }
+    .section-2{
+        margin: 0;
+        height: fit-content;
+        .section-2__div--description{
+            padding: 0 3rem 3rem 3rem;
+            .section-2__div--title{
+                padding-top: 3rem;
+                
+            }
+        }
+    }
+    .section-3{
+        .section-3__div--grid{
+            margin: 0;
+            .grid--div-1{
+                display: flex;
+                flex-wrap: wrap;
+                .grid--div-salsa{
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    .section-4{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .section-4__div{
+            padding: 3rem;
+            width: 100vw;
+            display: inherit;
+            justify-content: center;
+        }
+    }
+
+    
+}
