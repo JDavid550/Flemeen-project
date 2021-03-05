@@ -1,1 +1,11 @@
 /node_modules/
+._.DS_Store
+*json
+/css/*.map
+/css/*.min.css
+/css/*.rtl.css
+/css/._bootstrap*
+/css/bootstrap*
+/js/bootstrap*
+/js/._bootstrap*
+/js/._query.js
