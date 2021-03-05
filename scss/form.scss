@@ -2,7 +2,7 @@
 
 
 .form{
-    height: 100vh;
+    height: fit-content;
     .form-title{
         text-align: center;
         margin-top: 2rem;
@@ -10,8 +10,7 @@
     .form-div{
         box-shadow: 1px 1px 5px $main-color;
         border-radius: 5px;
-        margin: 0 30rem;
-        margin-top: 5rem;
+        margin: 5rem 0;
         background-color: $second-color;
         padding: 5rem;
         label{
@@ -43,6 +42,26 @@
             font-size: $font-size;
             font-family: var(--font-family-p);
         }
+        .sent-form{
+            text-align: center;
+            width: 100%;
+            margin-top: 2rem;
+            height: 3rem;
+            border-radius: 30px;
+            padding-top: 0.5rem;
+            color: white;
+            background-color: green;
+            
+        }
+        .no-sent-form{
+            @extend .sent-form;
+            background-color: red;
+
+        }
+        .no-register{
+            @extend .sent-form;
+            background-color: red;
+        }
     }
 }
 
@@ -52,10 +71,7 @@
         .form-title{
             margin-bottom: 2rem;
         }
-        .form-div{
-            margin: 0;
-           
-        }
+    
     }
    
 }
